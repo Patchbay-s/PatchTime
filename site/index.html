@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support, privacy, and terms for PatchTime, the iOS overtime and work-expense tracker.">
+  <title>PatchTime — Support</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+  <header>
+    <a class="brand" href="./"><img src="assets/patchbays-logo.png" alt="Patchbay's"></a>
+    <nav aria-label="Main navigation">
+      <a href="./">Support</a>
+      <a href="privacy/">Privacy</a>
+      <a href="terms/">Terms</a>
+      <a href="https://github.com/Patchbay-s/PatchTime">Source code</a>
+    </nav>
+  </header>
+  <main>
+    <p class="eyebrow">PATCHBAY'S APPS</p>
+    <h1>PatchTime support</h1>
+    <p class="lead">Track overtime, professional meals, leave, employers, and work-related estimates in one place.</p>
+    <section>
+      <h2>Get help</h2>
+      <p>For a reproducible bug or feature idea, use the appropriate project form. Do not include real employee data, employer details, account information, or screenshots containing personal records.</p>
+      <p class="actions">
+        <a class="button" href="https://github.com/Patchbay-s/PatchTime/issues/new/choose">Report a bug or suggest a feature</a>
+        <a href="https://github.com/Patchbay-s/PatchTime/security/advisories/new">Report a security issue privately</a>
+      </p>
+    </section>
+    <section>
+      <h2>What PatchTime does</h2>
+      <ul>
+        <li>Records overtime and recovery time, including shifts crossing midnight.</li>
+        <li>Tracks professional meals, employers, contracts, leave, and public holidays.</li>
+        <li>Provides calendars, statistics, annual and fiscal estimates, and PDF/CSV exports.</li>
+        <li>Syncs app data through the private CloudKit database associated with your Apple account.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Privacy and terms</h2>
+      <p>PatchTime has no app account or publisher-operated application server. See the <a href="privacy/">privacy policy</a> and <a href="terms/">terms of use</a> for details.</p>
+    </section>
+    <section>
+      <h2>Frequently asked questions</h2>
+      <!-- FAQ:START -->
+      <h3>Saisie des heures et des repas</h3>
+      <details id="saisie_heures">
+        <summary>Comment saisir des heures sup ou une récupération ?</summary>
+        <p>Dans l&#x27;onglet Heures Sup, touchez +. Choisissez « Heure supplémentaire » ou « Récupération », la date, l&#x27;heure de début et l&#x27;heure de fin (par pas de 15 minutes), puis un profil de taux. Les montants brut et net estimés s&#x27;affichent avant l&#x27;enregistrement. Une récupération est déduite de votre total d&#x27;heures.</p>
+      </details>
+      <details id="saisie_minuit">
+        <summary>Puis-je saisir une heure sup qui passe minuit ?</summary>
+        <p>Oui. Indiquez l&#x27;heure de début et l&#x27;heure de fin, par exemple 22:00 et 02:00 : sous les roues, le choix « Même jour » / « Lendemain (+1 j) » passe automatiquement sur Lendemain quand la fin est avant le début, et la date réelle de fin s&#x27;affiche. Vous pouvez aussi le basculer vous-même, ou utiliser « +15 min » et « +1 h », qui passent minuit ; « Réinitialiser la fin » remet la fin à une heure après le début. La saisie reste rattachée au jour où le service commence (calendrier, totaux, exports). Une saisie dure au maximum 24 h, et un début égal à la fin est refusé.</p>
+      </details>
+      <details id="saisie_repas">
+        <summary>Comment saisir un repas professionnel ?</summary>
+        <p>Dans l&#x27;onglet Heures Sup, basculez le sélecteur du haut sur « Repas », puis touchez +. Choisissez la date, l&#x27;employeur et le type de repas (déjeuner, dîner ou autre).</p>
+      </details>
+      <details id="valider">
+        <summary>Que signifient « Valider » et « Saisir en compta » ?</summary>
+        <p>« Valider » indique que vous avez vérifié une entrée : elle passe du rouge au vert dans le calendrier. « Saisir en compta » la marque comme traitée (déjà déclarée ou payée) : elle sort des totaux actifs mais reste consultable avec le filtre « Afficher les entrées traitées ». Une entrée traitée est toujours validée.</p>
+      </details>
+      <h3>Taux et majorations</h3>
+      <details id="taux">
+        <summary>Taux brut, taux net et taux de prélèvement : comment ça marche ?</summary>
+        <p>Chaque profil de taux a trois champs liés : taux brut, taux net et taux de prélèvement (charges). Renseignez-en deux, le troisième est calculé automatiquement (net = brut × (1 − taux de prélèvement)). Un profil doit avoir au moins un taux pour pouvoir saisir des heures.</p>
+      </details>
+      <details id="majorations">
+        <summary>Les majorations du week-end et des jours fériés sont-elles prises en compte ?</summary>
+        <p>Oui, si vous les renseignez dans le profil de taux (pourcentages facultatifs, selon votre convention collective). Elles s&#x27;appliquent aux heures du samedi, du dimanche et des jours fériés, et s&#x27;additionnent si un jour férié tombe un week-end. Pour une saisie qui passe minuit, chaque partie est majorée selon son propre jour. L&#x27;app ne gère pas de majoration de nuit.</p>
+      </details>
+      <h3>Employeurs et contrats</h3>
+      <details id="employeurs">
+        <summary>Comment gérer mes employeurs et mes contrats ?</summary>
+        <p>Réglages › Employeurs / Contrats. Pour chaque employeur, ajoutez des contrats CDI, CDD ou CDDU avec leurs dates, un volume hebdomadaire et la distance domicile-travail. Les profils de taux sont rattachés à un employeur.</p>
+      </details>
+      <details id="semaine_type">
+        <summary>À quoi sert la semaine type ?</summary>
+        <p>La semaine type décrit vos jours habituellement travaillés pour un employeur. Elle sert de base au Bilan fiscal (frais kilométriques et de repas) sans devoir saisir chaque journée. Une saisie réelle reste prioritaire sur la semaine type.</p>
+      </details>
+      <h3>Congés et jours fériés</h3>
+      <details id="conges">
+        <summary>Comment saisir des congés payés ou des jours de récupération ?</summary>
+        <p>Réglages › Congés / Récup, puis +. Choisissez le type (congé payé ou récupération), un jour ou plusieurs jours, et éventuellement l&#x27;employeur. Ces jours apparaissent dans le calendrier, les Statistiques et le Bilan fiscal.</p>
+      </details>
+      <details id="feries">
+        <summary>Comment sont gérés les jours fériés (France, Monaco) ?</summary>
+        <p>Réglages › Pays / jours fériés. Pour la France, la liste officielle est téléchargée depuis calendrier.api.gouv.fr. Monaco n&#x27;a pas de source officielle en ligne : l&#x27;app fournit une liste modifiable, à vérifier chaque année. Les jours fériés servent au calendrier et aux majorations.</p>
+      </details>
+      <h3>Calendrier</h3>
+      <details id="calendrier">
+        <summary>Que signifient les couleurs du calendrier ?</summary>
+        <p>Chaque jour peut afficher plusieurs pastilles : marron pour les jours fériés, congés et récupérations, bleu pour les jours travaillés, jaune pour les repas, vert pour les heures sup validées et rouge pour les heures sup ou repas à valider. Vous pouvez changer ces couleurs dans Réglages › Couleurs du calendrier.</p>
+      </details>
+      <h3>Statistiques et bilans</h3>
+      <details id="statistiques">
+        <summary>Que contient l&#x27;onglet Statistiques ?</summary>
+        <p>L&#x27;onglet Statistiques regroupe des blocs que vous affichez ou masquez : heures travaillées, répartition par employeur, évolution mensuelle, frais réels estimés, repas, congés et récupérations, heures traitées. Deux options permettent d&#x27;inclure la semaine type et les entrées traitées dans les totaux.</p>
+      </details>
+      <details id="bilans">
+        <summary>Quelle différence entre le Bilan fiscal et le Bilan annuel ?</summary>
+        <p>Le Bilan annuel récapitule une année : heures, gains, jours travaillés, répartition par employeur et comparaison avec l&#x27;année précédente. Le Bilan fiscal estime vos frais réels (kilomètres et repas) et les compare à l&#x27;abattement forfaitaire de 10 %. Ce sont des estimations indicatives, pas un conseil fiscal. Les deux bilans sont exportables en PDF.</p>
+      </details>
+      <h3>Exports PDF et CSV</h3>
+      <details id="exports">
+        <summary>Comment exporter mes heures en PDF ou en CSV ?</summary>
+        <p>Réglages › Export PDF mensuel ou Export CSV comptable : choisissez le mois et le profil, puis partagez le document (Mail, Fichiers, impression…). Les PDF sont toujours générés sur fond clair, même en mode sombre.</p>
+      </details>
+      <h3>iCloud, sauvegarde et restauration</h3>
+      <details id="icloud">
+        <summary>Comment fonctionne la synchronisation iCloud ?</summary>
+        <p>Vos données sont synchronisées entre vos appareils connectés au même compte iCloud via votre base privée CloudKit. L&#x27;état de la synchronisation est visible dans les Réglages.</p>
+      </details>
+      <details id="sauvegarde">
+        <summary>Comment sauvegarder ou restaurer mes données ?</summary>
+        <p>Réglages › Sauvegarde / Restauration crée un fichier JSON contenant vos heures, repas, employeurs et profils, à garder dans Fichiers ou à envoyer. La restauration ajoute les données manquantes sans rien supprimer ni dupliquer.</p>
+      </details>
+      <h3>Notifications et seuils</h3>
+      <details id="notifications">
+        <summary>Quelles notifications l&#x27;app peut-elle envoyer ?</summary>
+        <p>Réglages › Notifications : un rappel quotidien à l&#x27;heure de votre choix pour saisir vos heures, un rappel annuel pour la période de déclaration de revenus et des alertes configurables sur les seuils d&#x27;heures et de repas. Les seuils sont indicatifs : vérifiez la réglementation en vigueur.</p>
+      </details>
+      <h3>Widgets</h3>
+      <details id="widgets">
+        <summary>Comment ajouter un widget ?</summary>
+        <p>Touchez longuement l&#x27;écran d&#x27;accueil, puis Modifier › Ajouter un widget et cherchez « PatchTime ». Le widget « Heures Supplémentaires » (petit ou moyen) affiche les heures, gains et repas du mois ; le widget d&#x27;écran verrouillé affiche les heures du mois ; le widget « Par Employeur » affiche les statistiques de l&#x27;employeur sélectionné.</p>
+      </details>
+      <!-- FAQ:END -->
+    </section>
+  </main>
+  <footer><a href="https://github.com/Patchbay-s/PatchTime">PatchTime source code</a> · © Patchbay's</footer>
+</body>
+</html>

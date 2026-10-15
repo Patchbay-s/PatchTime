@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3711BD52FB3A150009B22A9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3711BD42FB3A150009B22A9 /* WidgetKit.framework */; };
+		C3711BD72FB3A150009B22A9 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3711BD62FB3A150009B22A9 /* SwiftUI.framework */; };
+		C3711BE62FB3A152009B22A9 /* PatchTimeWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C3711BD32FB3A150009B22A9 /* PatchTimeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84BE03C22DC2C0B100A976A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84BE03AC2DC2C0AD00A976A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84BE03B32DC2C0AD00A976A3;
+			remoteInfo = "PatchTime";
+		};
+		84BE03CC2DC2C0B100A976A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84BE03AC2DC2C0AD00A976A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84BE03B32DC2C0AD00A976A3;
+			remoteInfo = "PatchTime";
+		};
+		C3711BE42FB3A152009B22A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84BE03AC2DC2C0AD00A976A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3711BD22FB3A150009B22A9;
+			remoteInfo = PatchTimeWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C3711BEB2FB3A152009B22A9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C3711BE62FB3A152009B22A9 /* PatchTimeWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		84BE03B42DC2C0AD00A976A3 /* PatchTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PatchTime.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BE03C12DC2C0B100A976A3 /* PatchTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PatchTimeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BE03CB2DC2C0B100A976A3 /* PatchTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PatchTimeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3711BD32FB3A150009B22A9 /* PatchTimeWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PatchTimeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3711BD42FB3A150009B22A9 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C3711BD62FB3A150009B22A9 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C3711BEE2FB3A2C2009B22A9 /* PatchTimeWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PatchTimeWidgetExtension.entitlements; sourceTree = "<group>"; };
+		A72000012FB3A2C2009B22A9 /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		84EA2A5A2DCA8E500067BA64 /* Exceptions for "PatchTime" folder in "PatchTime" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 84BE03B32DC2C0AD00A976A3 /* PatchTime */;
+		};
+		C3711BEA2FB3A152009B22A9 /* Exceptions for "PatchTimeWidget" folder in "PatchTimeWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C3711BD22FB3A150009B22A9 /* PatchTimeWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		84BE03B62DC2C0AD00A976A3 /* PatchTime */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				84EA2A5A2DCA8E500067BA64 /* Exceptions for "PatchTime" folder in "PatchTime" target */,
+			);
+			path = "PatchTime";
+			sourceTree = "<group>";
+		};
+		84BE03C42DC2C0B100A976A3 /* PatchTimeTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "PatchTimeTests";
+			sourceTree = "<group>";
+		};
+		84BE03CE2DC2C0B100A976A3 /* PatchTimeUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "PatchTimeUITests";
+			sourceTree = "<group>";
+		};
+		C3711BD82FB3A150009B22A9 /* PatchTimeWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C3711BEA2FB3A152009B22A9 /* Exceptions for "PatchTimeWidget" folder in "PatchTimeWidgetExtension" target */,
+			);
+			path = PatchTimeWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84BE03B12DC2C0AD00A976A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84BE03BE2DC2C0B100A976A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84BE03C82DC2C0B100A976A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3711BD02FB3A150009B22A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3711BD72FB3A150009B22A9 /* SwiftUI.framework in Frameworks */,
+				C3711BD52FB3A150009B22A9 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		843CE0C32DD52AAA00D4E9D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3711BD42FB3A150009B22A9 /* WidgetKit.framework */,
+				C3711BD62FB3A150009B22A9 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84BE03AB2DC2C0AD00A976A3 = {
+			isa = PBXGroup;
+			children = (
+				A72000012FB3A2C2009B22A9 /* Project.xcconfig */,
+				C3711BEE2FB3A2C2009B22A9 /* PatchTimeWidgetExtension.entitlements */,
+				84BE03B62DC2C0AD00A976A3 /* PatchTime */,
+				84BE03C42DC2C0B100A976A3 /* PatchTimeTests */,
+				84BE03CE2DC2C0B100A976A3 /* PatchTimeUITests */,
+				C3711BD82FB3A150009B22A9 /* PatchTimeWidget */,
+				843CE0C32DD52AAA00D4E9D0 /* Frameworks */,
+				84BE03B52DC2C0AD00A976A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84BE03B52DC2C0AD00A976A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84BE03B42DC2C0AD00A976A3 /* PatchTime.app */,
+				84BE03C12DC2C0B100A976A3 /* PatchTimeTests.xctest */,
+				84BE03CB2DC2C0B100A976A3 /* PatchTimeUITests.xctest */,
+				C3711BD32FB3A150009B22A9 /* PatchTimeWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84BE03B32DC2C0AD00A976A3 /* PatchTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84BE03D52DC2C0B100A976A3 /* Build configuration list for PBXNativeTarget "PatchTime" */;
+			buildPhases = (
+				84BE03B02DC2C0AD00A976A3 /* Sources */,
+				84BE03B12DC2C0AD00A976A3 /* Frameworks */,
+				84BE03B22DC2C0AD00A976A3 /* Resources */,
+				C3711BEB2FB3A152009B22A9 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3711BE52FB3A152009B22A9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				84BE03B62DC2C0AD00A976A3 /* PatchTime */,
+			);
+			name = "PatchTime";
+			packageProductDependencies = (
+			);
+			productName = "PatchTime";
+			productReference = 84BE03B42DC2C0AD00A976A3 /* PatchTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84BE03C02DC2C0B100A976A3 /* PatchTimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84BE03D82DC2C0B100A976A3 /* Build configuration list for PBXNativeTarget "PatchTimeTests" */;
+			buildPhases = (
+				84BE03BD2DC2C0B100A976A3 /* Sources */,
+				84BE03BE2DC2C0B100A976A3 /* Frameworks */,
+				84BE03BF2DC2C0B100A976A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84BE03C32DC2C0B100A976A3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				84BE03C42DC2C0B100A976A3 /* PatchTimeTests */,
+			);
+			name = "PatchTimeTests";
+			packageProductDependencies = (
+			);
+			productName = "PatchTimeTests";
+			productReference = 84BE03C12DC2C0B100A976A3 /* PatchTimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84BE03CA2DC2C0B100A976A3 /* PatchTimeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84BE03DB2DC2C0B100A976A3 /* Build configuration list for PBXNativeTarget "PatchTimeUITests" */;
+			buildPhases = (
+				84BE03C72DC2C0B100A976A3 /* Sources */,
+				84BE03C82DC2C0B100A976A3 /* Frameworks */,
+				84BE03C92DC2C0B100A976A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84BE03CD2DC2C0B100A976A3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				84BE03CE2DC2C0B100A976A3 /* PatchTimeUITests */,
+			);
+			name = "PatchTimeUITests";
+			packageProductDependencies = (
+			);
+			productName = "PatchTimeUITests";
+			productReference = 84BE03CB2DC2C0B100A976A3 /* PatchTimeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C3711BD22FB3A150009B22A9 /* PatchTimeWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3711BE72FB3A152009B22A9 /* Build configuration list for PBXNativeTarget "PatchTimeWidgetExtension" */;
+			buildPhases = (
+				C3711BCF2FB3A150009B22A9 /* Sources */,
+				C3711BD02FB3A150009B22A9 /* Frameworks */,
+				C3711BD12FB3A150009B22A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C3711BD82FB3A150009B22A9 /* PatchTimeWidget */,
+			);
+			name = PatchTimeWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = PatchTimeWidgetExtension;
+			productReference = C3711BD32FB3A150009B22A9 /* PatchTimeWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84BE03AC2DC2C0AD00A976A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					84BE03B32DC2C0AD00A976A3 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					84BE03C02DC2C0B100A976A3 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 84BE03B32DC2C0AD00A976A3;
+					};
+					84BE03CA2DC2C0B100A976A3 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 84BE03B32DC2C0AD00A976A3;
+					};
+					C3711BD22FB3A150009B22A9 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+				};
+			};
+			buildConfigurationList = 84BE03AF2DC2C0AD00A976A3 /* Build configuration list for PBXProject "PatchTime" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84BE03AB2DC2C0AD00A976A3;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 84BE03B52DC2C0AD00A976A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84BE03B32DC2C0AD00A976A3 /* PatchTime */,
+				84BE03C02DC2C0B100A976A3 /* PatchTimeTests */,
+				84BE03CA2DC2C0B100A976A3 /* PatchTimeUITests */,
+				C3711BD22FB3A150009B22A9 /* PatchTimeWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84BE03B22DC2C0AD00A976A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84BE03BF2DC2C0B100A976A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84BE03C92DC2C0B100A976A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3711BD12FB3A150009B22A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84BE03B02DC2C0AD00A976A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84BE03BD2DC2C0B100A976A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84BE03C72DC2C0B100A976A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3711BCF2FB3A150009B22A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84BE03C32DC2C0B100A976A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84BE03B32DC2C0AD00A976A3 /* PatchTime */;
+			targetProxy = 84BE03C22DC2C0B100A976A3 /* PBXContainerItemProxy */;
+		};
+		84BE03CD2DC2C0B100A976A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84BE03B32DC2C0AD00A976A3 /* PatchTime */;
+			targetProxy = 84BE03CC2DC2C0B100A976A3 /* PBXContainerItemProxy */;
+		};
+		C3711BE52FB3A152009B22A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3711BD22FB3A150009B22A9 /* PatchTimeWidgetExtension */;
+			targetProxy = C3711BE42FB3A152009B22A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		84BE03D32DC2C0B100A976A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A72000012FB3A2C2009B22A9 /* Project.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "PatchTime/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84BE03D42DC2C0B100A976A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A72000012FB3A2C2009B22A9 /* Project.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "PatchTime/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84BE03D62DC2C0B100A976A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "PatchTime/PatchTime.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PatchTime;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 5.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.antxis.apple.suivi-heure";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84BE03D72DC2C0B100A976A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "PatchTime/PatchTime.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PatchTime;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 5.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.antxis.apple.suivi-heure";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84BE03D92DC2C0B100A976A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 5.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.antxis.apple.suivi-heureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PatchTime.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PatchTime";
+			};
+			name = Debug;
+		};
+		84BE03DA2DC2C0B100A976A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 5.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.antxis.apple.suivi-heureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PatchTime.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PatchTime";
+			};
+			name = Release;
+		};
+		84BE03DC2DC2C0B100A976A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 5.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.antxis.apple.suivi-heureUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PatchTime";
+			};
+			name = Debug;
+		};
+		84BE03DD2DC2C0B100A976A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 5.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.antxis.apple.suivi-heureUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PatchTime";
+			};
+			name = Release;
+		};
+		C3711BE82FB3A152009B22A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PatchTimeWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PatchTimeWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PatchTime;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 5.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.antxis.apple.suivi-heure.SuiviHeureWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3711BE92FB3A152009B22A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PatchTimeWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PatchTimeWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PatchTime;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 5.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.antxis.apple.suivi-heure.SuiviHeureWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84BE03AF2DC2C0AD00A976A3 /* Build configuration list for PBXProject "PatchTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BE03D32DC2C0B100A976A3 /* Debug */,
+				84BE03D42DC2C0B100A976A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84BE03D52DC2C0B100A976A3 /* Build configuration list for PBXNativeTarget "PatchTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BE03D62DC2C0B100A976A3 /* Debug */,
+				84BE03D72DC2C0B100A976A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84BE03D82DC2C0B100A976A3 /* Build configuration list for PBXNativeTarget "PatchTimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BE03D92DC2C0B100A976A3 /* Debug */,
+				84BE03DA2DC2C0B100A976A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84BE03DB2DC2C0B100A976A3 /* Build configuration list for PBXNativeTarget "PatchTimeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BE03DC2DC2C0B100A976A3 /* Debug */,
+				84BE03DD2DC2C0B100A976A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3711BE72FB3A152009B22A9 /* Build configuration list for PBXNativeTarget "PatchTimeWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3711BE82FB3A152009B22A9 /* Debug */,
+				C3711BE92FB3A152009B22A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 84BE03AC2DC2C0AD00A976A3 /* Project object */;
+}

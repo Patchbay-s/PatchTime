@@ -1,0 +1,106 @@
+/*
+  Localizable.strings — PatchTime
+  Textes de l'Aide & Support (FAQ) et de l'écran À propos.
+  La structure (thèmes, ordre, identifiants) est définie dans SupportContent.swift ;
+  la page support du site est générée à partir de ce même fichier (scripts/export_faq.py).
+*/
+
+/* MARK: - Aide & Support */
+
+"help.title" = "Aide & Support";
+"help.search.prompt" = "Rechercher dans l'aide";
+"help.noResults" = "Aucune réponse ne correspond à votre recherche.";
+"help.section.contact" = "Nous contacter";
+"help.contact.description" = "Consultez la page d'assistance PatchTime pour les informations de support et de confidentialité.";
+"help.contact.website" = "Ouvrir l'assistance PatchTime";
+
+/* MARK: - À propos */
+
+"about.title" = "À propos";
+"about.description" = "Suivez vos heures supplémentaires, récupérations, repas professionnels et congés, employeur par employeur, avec des bilans clairs pour votre comptabilité.";
+"about.version" = "Version";
+"about.section.actions" = "Vous aimez l'app ?";
+"about.rate" = "Noter l'app";
+"about.section.data" = "Vos données";
+"about.data.device" = "Vos saisies sont enregistrées sur votre appareil et synchronisées dans la base privée CloudKit de votre compte iCloud.";
+"about.data.icloud" = "L'éditeur n'a ni compte utilisateur ni serveur applicatif, et n'a pas accès à vos données iCloud.";
+"about.section.disclaimer" = "Estimations";
+"about.disclaimer" = "Les montants, frais réels et bilans sont des estimations indicatives. Ils ne constituent pas un conseil fiscal : vérifiez les barèmes officiels de l'année et restez responsable de votre déclaration.";
+"about.bareme.km" = "Barème kilométrique";
+"about.bareme.meal" = "Barème frais de repas";
+"about.bareme.verified" = "vérifié le";
+"about.section.licenses" = "Licences";
+"about.license.holidays" = "Jours fériés français";
+"about.license.holidays.detail" = "calendrier.api.gouv.fr — Licence Ouverte / Etalab.";
+
+/* MARK: - FAQ : thèmes */
+
+"faq.theme.saisie" = "Saisie des heures et des repas";
+"faq.theme.taux" = "Taux et majorations";
+"faq.theme.employeurs" = "Employeurs et contrats";
+"faq.theme.conges" = "Congés et jours fériés";
+"faq.theme.calendrier" = "Calendrier";
+"faq.theme.bilans" = "Statistiques et bilans";
+"faq.theme.exports" = "Exports PDF et CSV";
+"faq.theme.donnees" = "iCloud, sauvegarde et restauration";
+"faq.theme.notifications" = "Notifications et seuils";
+"faq.theme.widgets" = "Widgets";
+
+/* MARK: - FAQ : questions et réponses */
+
+"faq.saisie_heures.q" = "Comment saisir des heures sup ou une récupération ?";
+"faq.saisie_heures.a" = "Dans l'onglet Heures Sup, touchez +. Choisissez « Heure supplémentaire » ou « Récupération », la date, l'heure de début et l'heure de fin (par pas de 15 minutes), puis un profil de taux. Les montants brut et net estimés s'affichent avant l'enregistrement. Une récupération est déduite de votre total d'heures.";
+
+"faq.saisie_minuit.q" = "Puis-je saisir une heure sup qui passe minuit ?";
+"faq.saisie_minuit.a" = "Oui. Indiquez l'heure de début et l'heure de fin, par exemple 22:00 et 02:00 : sous les roues, le choix « Même jour » / « Lendemain (+1 j) » passe automatiquement sur Lendemain quand la fin est avant le début, et la date réelle de fin s'affiche. Vous pouvez aussi le basculer vous-même, ou utiliser « +15 min » et « +1 h », qui passent minuit ; « Réinitialiser la fin » remet la fin à une heure après le début. La saisie reste rattachée au jour où le service commence (calendrier, totaux, exports). Une saisie dure au maximum 24 h, et un début égal à la fin est refusé.";
+
+"faq.saisie_repas.q" = "Comment saisir un repas professionnel ?";
+"faq.saisie_repas.a" = "Dans l'onglet Heures Sup, basculez le sélecteur du haut sur « Repas », puis touchez +. Choisissez la date, l'employeur et le type de repas (déjeuner, dîner ou autre).";
+
+"faq.valider.q" = "Que signifient « Valider » et « Saisir en compta » ?";
+"faq.valider.a" = "« Valider » indique que vous avez vérifié une entrée : elle passe du rouge au vert dans le calendrier. « Saisir en compta » la marque comme traitée (déjà déclarée ou payée) : elle sort des totaux actifs mais reste consultable avec le filtre « Afficher les entrées traitées ». Une entrée traitée est toujours validée.";
+
+"faq.taux.q" = "Taux brut, taux net et taux de prélèvement : comment ça marche ?";
+"faq.taux.a" = "Chaque profil de taux a trois champs liés : taux brut, taux net et taux de prélèvement (charges). Renseignez-en deux, le troisième est calculé automatiquement (net = brut × (1 − taux de prélèvement)). Un profil doit avoir au moins un taux pour pouvoir saisir des heures.";
+
+"faq.majorations.q" = "Les majorations du week-end et des jours fériés sont-elles prises en compte ?";
+"faq.majorations.a" = "Oui, si vous les renseignez dans le profil de taux (pourcentages facultatifs, selon votre convention collective). Elles s'appliquent aux heures du samedi, du dimanche et des jours fériés, et s'additionnent si un jour férié tombe un week-end. Pour une saisie qui passe minuit, chaque partie est majorée selon son propre jour. L'app ne gère pas de majoration de nuit.";
+
+"faq.employeurs.q" = "Comment gérer mes employeurs et mes contrats ?";
+"faq.employeurs.a" = "Réglages › Employeurs / Contrats. Pour chaque employeur, ajoutez des contrats CDI, CDD ou CDDU avec leurs dates, un volume hebdomadaire et la distance domicile-travail. Les profils de taux sont rattachés à un employeur.";
+
+"faq.semaine_type.q" = "À quoi sert la semaine type ?";
+"faq.semaine_type.a" = "La semaine type décrit vos jours habituellement travaillés pour un employeur. Elle sert de base au Bilan fiscal (frais kilométriques et de repas) sans devoir saisir chaque journée. Une saisie réelle reste prioritaire sur la semaine type.";
+
+"faq.conges.q" = "Comment saisir des congés payés ou des jours de récupération ?";
+"faq.conges.a" = "Réglages › Congés / Récup, puis +. Choisissez le type (congé payé ou récupération), un jour ou plusieurs jours, et éventuellement l'employeur. Ces jours apparaissent dans le calendrier, les Statistiques et le Bilan fiscal.";
+
+"faq.feries.q" = "Comment sont gérés les jours fériés (France, Monaco) ?";
+"faq.feries.a" = "Réglages › Pays / jours fériés. Pour la France, la liste officielle est téléchargée depuis calendrier.api.gouv.fr. Monaco n'a pas de source officielle en ligne : l'app fournit une liste modifiable, à vérifier chaque année. Les jours fériés servent au calendrier et aux majorations.";
+
+"faq.calendrier.q" = "Que signifient les couleurs du calendrier ?";
+"faq.calendrier.a" = "Chaque jour peut afficher plusieurs pastilles : marron pour les jours fériés, congés et récupérations, bleu pour les jours travaillés, jaune pour les repas, vert pour les heures sup validées et rouge pour les heures sup ou repas à valider. Vous pouvez changer ces couleurs dans Réglages › Couleurs du calendrier.";
+
+"faq.statistiques.q" = "Que contient l'onglet Statistiques ?";
+"faq.statistiques.a" = "L'onglet Statistiques regroupe des blocs que vous affichez ou masquez : heures travaillées, répartition par employeur, évolution mensuelle, frais réels estimés, repas, congés et récupérations, heures traitées. Deux options permettent d'inclure la semaine type et les entrées traitées dans les totaux.";
+
+"faq.bilans.q" = "Quelle différence entre le Bilan fiscal et le Bilan annuel ?";
+"faq.bilans.a" = "Le Bilan annuel récapitule une année : heures, gains, jours travaillés, répartition par employeur et comparaison avec l'année précédente. Le Bilan fiscal estime vos frais réels (kilomètres et repas) et les compare à l'abattement forfaitaire de 10 %. Ce sont des estimations indicatives, pas un conseil fiscal. Les deux bilans sont exportables en PDF.";
+
+"faq.exports.q" = "Comment exporter mes heures en PDF ou en CSV ?";
+"faq.exports.a" = "Réglages › Export PDF mensuel ou Export CSV comptable : choisissez le mois et le profil, puis partagez le document (Mail, Fichiers, impression…). Les PDF sont toujours générés sur fond clair, même en mode sombre.";
+
+"faq.icloud.q" = "Comment fonctionne la synchronisation iCloud ?";
+"faq.icloud.a" = "Vos données sont synchronisées entre vos appareils connectés au même compte iCloud via votre base privée CloudKit. L'état de la synchronisation est visible dans les Réglages.";
+
+"faq.sauvegarde.q" = "Comment sauvegarder ou restaurer mes données ?";
+"faq.sauvegarde.a" = "Réglages › Sauvegarde / Restauration crée un fichier JSON contenant vos heures, repas, employeurs et profils, à garder dans Fichiers ou à envoyer. La restauration ajoute les données manquantes sans rien supprimer ni dupliquer.";
+
+"faq.notifications.q" = "Quelles notifications l'app peut-elle envoyer ?";
+"faq.notifications.a" = "Réglages › Notifications : un rappel quotidien à l'heure de votre choix pour saisir vos heures, un rappel annuel pour la période de déclaration de revenus et des alertes configurables sur les seuils d'heures et de repas. Les seuils sont indicatifs : vérifiez la réglementation en vigueur.";
+
+"faq.widgets.q" = "Comment ajouter un widget ?";
+"faq.widgets.a" = "Touchez longuement l'écran d'accueil, puis Modifier › Ajouter un widget et cherchez « PatchTime ». Le widget « Heures Supplémentaires » (petit ou moyen) affiche les heures, gains et repas du mois ; le widget d'écran verrouillé affiche les heures du mois ; le widget « Par Employeur » affiche les statistiques de l'employeur sélectionné.";
+
+"faq.donnees.q" = "Mes données sont-elles envoyées à l'éditeur ?";
+"faq.donnees.a" = "PatchTime n'a ni compte utilisateur ni serveur applicatif. Vos données restent sur votre appareil et sont synchronisées via CloudKit dans votre compte iCloud privé. Seul le téléchargement des jours fériés français utilise un service externe. Détails dans la politique de confidentialité.";

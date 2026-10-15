@@ -1,0 +1,41 @@
+# Local account settings
+Local.xcconfig
+
+# Private activation-code material
+ACTIVATION_CODES.md
+
+# Xcode user data and generated output
+*.xcuserstate
+*.xcuserdatad/
+xcuserdata/
+*.moved-aside
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+.swiftpm/xcode/package.xcworkspace/xcuserdata/
+
+# Build and distribution artifacts
+.build/
+DerivedData/
+build/
+*.ipa
+*.app
+*.dSYM/
+*.xcarchive/
+*.xcresult
+*.mobileprovision
+*.provisionprofile
+*.p12
+*.cer
+*.p8
+AuthKey_*.p8
+*.log
+*.csv
+*.pdf
+
+# Third-party service credentials
+GoogleService-Info.plist
+
+# macOS
+.DS_Store

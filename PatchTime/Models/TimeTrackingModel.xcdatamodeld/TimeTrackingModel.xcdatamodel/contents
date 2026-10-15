@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23788.4" systemVersion="25A5279m" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="LeaveEntry" representedClassName="LeaveEntry" syncable="YES" codeGenerationType="class">
+        <attribute name="archived" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="employerID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isValidated" optional="YES" attributeType="Boolean" usesScalarValueType="YES" defaultValueString="NO"/>
+        <attribute name="reason" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String" defaultValueString="cp"/>
+    </entity>
+    <entity name="MealCategory" representedClassName="MealCategory" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String" defaultValueString=""/>
+        <relationship name="meals" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MealEntry" inverseName="category" inverseEntity="MealEntry"/>
+    </entity>
+    <entity name="MealEntry" representedClassName="MealEntry" syncable="YES" codeGenerationType="class">
+        <attribute name="archived" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="employerID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isValidated" optional="YES" attributeType="Boolean" usesScalarValueType="YES" defaultValueString="NO"/>
+        <attribute name="mealType" optional="YES" attributeType="String"/>
+        <attribute name="profileID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MealCategory" inverseName="meals" inverseEntity="MealCategory"/>
+    </entity>
+    <entity name="OvertimeEntry" representedClassName="OvertimeEntry" syncable="YES" codeGenerationType="class">
+        <attribute name="archived" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="employerID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="endTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isValidated" optional="YES" attributeType="Boolean" usesScalarValueType="YES" defaultValueString="NO"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="profileID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="reason" optional="YES" attributeType="String"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="type" optional="YES" attributeType="String" defaultValueString="sup"/>
+    </entity>
+    <entity name="Contract" representedClassName="Contract" syncable="YES" codeGenerationType="class">
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="kmDistanceRoundTrip" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="type" optional="YES" attributeType="String" defaultValueString="cdi"/>
+        <attribute name="weeklyContractDays" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="weeklyContractHours" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <relationship name="employer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Employer" inverseName="contracts" inverseEntity="Employer"/>
+    </entity>
+    <entity name="Employer" representedClassName="Employer" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="kmDistanceRoundTrip" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String" defaultValueString=""/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="siret" optional="YES" attributeType="String"/>
+        <attribute name="typicalWeekEnabled" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="typicalWeekMondayWorked" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="typicalWeekMondayHours" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="typicalWeekTuesdayWorked" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="typicalWeekTuesdayHours" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="typicalWeekWednesdayWorked" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="typicalWeekWednesdayHours" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="typicalWeekThursdayWorked" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="typicalWeekThursdayHours" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="typicalWeekFridayWorked" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="typicalWeekFridayHours" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="typicalWeekSaturdayWorked" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="typicalWeekSaturdayHours" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="typicalWeekSundayWorked" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="typicalWeekSundayHours" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <relationship name="contracts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Contract" inverseName="employer" inverseEntity="Contract"/>
+        <relationship name="profiles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OvertimeProfile" inverseName="employer" inverseEntity="OvertimeProfile"/>
+    </entity>
+    <entity name="OvertimeProfile" representedClassName="OvertimeProfile" syncable="YES" codeGenerationType="class">
+        <attribute name="details" optional="YES" attributeType="String"/>
+        <attribute name="holidaySurchargePercent" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="hourlyRate" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String" defaultValueString=""/>
+        <attribute name="tauxBrut" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="tauxNet" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="tauxPourcentage" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <attribute name="weekendSurchargePercent" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
+        <relationship name="employer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Employer" inverseName="profiles" inverseEntity="Employer"/>
+    </entity>
+    <entity name="PublicHoliday" representedClassName="PublicHoliday" syncable="YES" codeGenerationType="class">
+        <attribute name="countryZone" optional="YES" attributeType="String" defaultValueString="metropole"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isUserEdited" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="label" optional="YES" attributeType="String"/>
+        <attribute name="source" optional="YES" attributeType="String" defaultValueString="custom"/>
+    </entity>
+    <entity name="Availability" representedClassName="Availability" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="isRecurring" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="recurringPattern" optional="YES" attributeType="String"/>
+    </entity>
+</model>
