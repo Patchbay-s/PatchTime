@@ -96,7 +96,7 @@ PatchTime uses SwiftUI and Core Data with a lightweight MVVM structure. `CoreDat
 <a id="status"></a>
 ## Status
 
-Current app version: **5.0** (build **1**). No GitHub release has been published yet; follow the [releases page](https://github.com/Patchbay-s/PatchTime/releases) for source releases.
+Current app version: **5.0** (build **1**). The [v5.0.0 source release](https://github.com/Patchbay-s/PatchTime/releases/tag/v5.0.0) is available on GitHub.
 
 PatchTime is maintained as an open-source iOS project. Builds and static checks run through GitHub Actions. Confirm the support, privacy, and terms URLs in App Store Connect.
 
