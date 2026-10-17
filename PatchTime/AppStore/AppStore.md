@@ -32,6 +32,7 @@ Amounts and summaries are estimates for information only and are not tax advice.
 
 - App Store: https://apps.apple.com/app/id6747032439
 - Support: https://patchbay-s.github.io/PatchTime/
+- Support email: patchbay-s@proton.me
 - Privacy policy: https://patchbay-s.github.io/PatchTime/privacy/
 - Terms of use: https://patchbay-s.github.io/PatchTime/terms/
 - Source code: https://github.com/Patchbay-s/PatchTime

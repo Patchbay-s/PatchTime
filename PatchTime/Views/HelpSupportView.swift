@@ -14,6 +14,7 @@ struct HelpSupportView: View {
     private var themes: [FAQTheme] { SupportContent.filteredThemes(matching: searchText) }
     private var isSearching: Bool { !searchText.trimmingCharacters(in: .whitespaces).isEmpty }
     private var supportURL: URL? { URL(string: "https://patchbay-s.github.io/PatchTime/") }
+    private var supportEmailURL: URL? { URL(string: "mailto:patchbay-s@proton.me?subject=PatchTime") }
 
     var body: some View {
         List {
@@ -42,6 +43,9 @@ struct HelpSupportView: View {
 
             Section {
                 Text("help.contact.description")
+                if let supportEmailURL {
+                    Link("help.contact.email", destination: supportEmailURL)
+                }
                 if let supportURL {
                     Link("help.contact.website", destination: supportURL)
                 }

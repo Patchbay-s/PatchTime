@@ -32,7 +32,10 @@ struct PrivacyPolicyView: View {
                 }
 
                 PolicySection(title: "4. Contact", icon: "envelope") {
-                    Text("Pour une question sur cette politique ou vos données, contactez l'équipe via la page d'assistance du site PatchTime.")
+                    Text("Pour une question sur cette politique ou vos données, écrivez à patchbay-s@proton.me ou passez par la page d'assistance du site PatchTime.")
+                    if let mailURL = URL(string: "mailto:patchbay-s@proton.me?subject=PatchTime") {
+                        Link("Écrire à patchbay-s@proton.me", destination: mailURL)
+                    }
                     if let supportURL = URL(string: "https://patchbay-s.github.io/PatchTime/") {
                         Link("Ouvrir l'assistance PatchTime", destination: supportURL)
                     }
