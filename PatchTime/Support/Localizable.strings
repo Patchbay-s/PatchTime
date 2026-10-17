@@ -11,7 +11,8 @@
 "help.search.prompt" = "Rechercher dans l'aide";
 "help.noResults" = "Aucune réponse ne correspond à votre recherche.";
 "help.section.contact" = "Nous contacter";
-"help.contact.description" = "Consultez la page d'assistance PatchTime pour les informations de support et de confidentialité.";
+"help.contact.description" = "Écrivez au support (patchbay-s@proton.me) ou consultez la page d'assistance PatchTime pour les informations de support et de confidentialité.";
+"help.contact.email" = "Écrire au support";
 "help.contact.website" = "Ouvrir l'assistance PatchTime";
 
 /* MARK: - À propos */

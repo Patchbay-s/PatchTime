@@ -57,7 +57,7 @@ PatchTime has no app account or publisher-operated application server. App recor
 
 - [Privacy policy](https://patchbay-s.github.io/PatchTime/privacy/)
 - [Terms of use](https://patchbay-s.github.io/PatchTime/terms/)
-- [Support](https://patchbay-s.github.io/PatchTime/)
+- [Support](https://patchbay-s.github.io/PatchTime/) · [patchbay-s@proton.me](mailto:patchbay-s@proton.me)
 
 <a id="get-started"></a>
 ## Get started
